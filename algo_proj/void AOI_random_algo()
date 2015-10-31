@@ -1,0 +1,52 @@
+void AOI::random_algo()
+{
+    list<Sensor> valid_sensors, picked_sensors,to_print;
+    list<Mission>::iterator m_iter;
+    list<Sensor>::iterator s_iter, s_iter_2;
+    Mission this_mission;
+    int m_duration, s_id, num_valide_sen,picked_index;
+    m_list.sort();
+    for (int m_index = 0; m_index < num_mission; m_index++) {
+        this_mission = index_missions(m_index);
+        m_duration = this_mission.end - this_mission.start + 1;
+        
+        valid_sensors = find_valid_sensors(this_mission);
+        if (valid_sensors.size() >= this_mission.N_req_sensors) {
+            m_iter = m_list.begin();
+            advance(m_iter, m_index);
+            (*m_iter).mission_succeed = true;
+            num_valide_sen=static_cast<int>(valid_sensors.size());
+            for(int i=0; i<this_mission.N_req_sensors;i++)
+            {
+                picked_index=rand()%(num_valide_sen-i);
+                picked_sensors.push_back(index_sensors(picked_index,valid_sensors));
+                s_id=index_sensors(picked_index,valid_sensors).sensor_id;
+                update_sensor(s_id,m_duration,this_mission.end);
+                s_iter_2 = valid_sensors.begin();
+                for (int i = 0; i < picked_index; i++) {
+                    s_iter_2++;
+                }
+                s_iter=valid_sensors.begin();
+                swap(*s_iter,*s_iter_2);
+                valid_sensors.pop_front();
+            }
+            
+            (*m_iter).print_details(m_index);
+            cout << "\nRANDOMLY PICKED SENSORS\n";
+            for (int i = 0; i < this_mission.N_req_sensors; i++) {
+                
+                to_print.push_back(index_sensors(i, picked_sensors));
+            }
+            print_sensors(to_print);
+            to_print.clear();
+            picked_sensors.clear();
+            cout << endl;
+        }
+        else
+        {
+            this_mission.print_details(m_index);
+            cout << "MISSION FAILED!\n";
+        }
+    }
+    return;
+}
