@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D80D3D61BE1D7F60027A9FE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D80D3D51BE1D7F60027A9FE /* main.cpp */; };
-		0D80D3E41BE1D8290027A9FE /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D80D3DE1BE1D8290027A9FE /* mission.cpp */; };
-		0D80D3E51BE1D8290027A9FE /* sensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D80D3E01BE1D8290027A9FE /* sensor.cpp */; };
-		0D80D3EC1BE1DBAF0027A9FE /* AOI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D80D3EA1BE1DBAF0027A9FE /* AOI.cpp */; };
+		0D1EF4C91BE447B600BD9584 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4C81BE447B600BD9584 /* main.cpp */; };
+		0D1EF4D61BE447D900BD9584 /* AOI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4CF1BE447D900BD9584 /* AOI.cpp */; };
+		0D1EF4D81BE447D900BD9584 /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4D21BE447D900BD9584 /* mission.cpp */; };
+		0D1EF4D91BE447D900BD9584 /* sensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4D41BE447D900BD9584 /* sensor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0D80D3D01BE1D7F60027A9FE /* CopyFiles */ = {
+		0D1EF4C31BE447B600BD9584 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,18 +26,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D80D3D21BE1D7F60027A9FE /* algo_proj_take2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algo_proj_take2; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D80D3D51BE1D7F60027A9FE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		0D80D3DE1BE1D8290027A9FE /* mission.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mission.cpp; sourceTree = "<group>"; };
-		0D80D3DF1BE1D8290027A9FE /* mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mission.h; sourceTree = "<group>"; };
-		0D80D3E01BE1D8290027A9FE /* sensor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sensor.cpp; sourceTree = "<group>"; };
-		0D80D3E11BE1D8290027A9FE /* sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensor.h; sourceTree = "<group>"; };
-		0D80D3EA1BE1DBAF0027A9FE /* AOI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AOI.cpp; sourceTree = "<group>"; };
-		0D80D3EB1BE1DBAF0027A9FE /* AOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOI.h; sourceTree = "<group>"; };
+		0D1EF4C51BE447B600BD9584 /* Algo_Sensor_Proj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo_Sensor_Proj; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D1EF4C81BE447B600BD9584 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0D1EF4CF1BE447D900BD9584 /* AOI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AOI.cpp; path = ../../algo_proj/AOI.cpp; sourceTree = "<group>"; };
+		0D1EF4D01BE447D900BD9584 /* AOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AOI.h; path = ../../algo_proj/AOI.h; sourceTree = "<group>"; };
+		0D1EF4D21BE447D900BD9584 /* mission.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mission.cpp; path = ../../algo_proj/mission.cpp; sourceTree = "<group>"; };
+		0D1EF4D31BE447D900BD9584 /* mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mission.h; path = ../../algo_proj/mission.h; sourceTree = "<group>"; };
+		0D1EF4D41BE447D900BD9584 /* sensor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sensor.cpp; path = ../../algo_proj/sensor.cpp; sourceTree = "<group>"; };
+		0D1EF4D51BE447D900BD9584 /* sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sensor.h; path = ../../algo_proj/sensor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D80D3CF1BE1D7F60027A9FE /* Frameworks */ = {
+		0D1EF4C21BE447B600BD9584 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,103 +47,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D80D3C91BE1D7F60027A9FE = {
+		0D1EF4BC1BE447B600BD9584 = {
 			isa = PBXGroup;
 			children = (
-				0D80D3D41BE1D7F60027A9FE /* algo_proj_take2 */,
-				0D80D3D31BE1D7F60027A9FE /* Products */,
+				0D1EF4C71BE447B600BD9584 /* Algo_Sensor_Proj */,
+				0D1EF4C61BE447B600BD9584 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0D80D3D31BE1D7F60027A9FE /* Products */ = {
+		0D1EF4C61BE447B600BD9584 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D80D3D21BE1D7F60027A9FE /* algo_proj_take2 */,
+				0D1EF4C51BE447B600BD9584 /* Algo_Sensor_Proj */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D80D3D41BE1D7F60027A9FE /* algo_proj_take2 */ = {
+		0D1EF4C71BE447B600BD9584 /* Algo_Sensor_Proj */ = {
 			isa = PBXGroup;
 			children = (
-				0D80D3EA1BE1DBAF0027A9FE /* AOI.cpp */,
-				0D80D3EB1BE1DBAF0027A9FE /* AOI.h */,
-				0D80D3DE1BE1D8290027A9FE /* mission.cpp */,
-				0D80D3DF1BE1D8290027A9FE /* mission.h */,
-				0D80D3E01BE1D8290027A9FE /* sensor.cpp */,
-				0D80D3E11BE1D8290027A9FE /* sensor.h */,
-				0D80D3D51BE1D7F60027A9FE /* main.cpp */,
+				0D1EF4CF1BE447D900BD9584 /* AOI.cpp */,
+				0D1EF4D01BE447D900BD9584 /* AOI.h */,
+				0D1EF4D21BE447D900BD9584 /* mission.cpp */,
+				0D1EF4D31BE447D900BD9584 /* mission.h */,
+				0D1EF4D41BE447D900BD9584 /* sensor.cpp */,
+				0D1EF4D51BE447D900BD9584 /* sensor.h */,
+				0D1EF4C81BE447B600BD9584 /* main.cpp */,
 			);
-			path = algo_proj_take2;
+			path = Algo_Sensor_Proj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D80D3D11BE1D7F60027A9FE /* algo_proj_take2 */ = {
+		0D1EF4C41BE447B600BD9584 /* Algo_Sensor_Proj */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D80D3D91BE1D7F60027A9FE /* Build configuration list for PBXNativeTarget "algo_proj_take2" */;
+			buildConfigurationList = 0D1EF4CC1BE447B600BD9584 /* Build configuration list for PBXNativeTarget "Algo_Sensor_Proj" */;
 			buildPhases = (
-				0D80D3CE1BE1D7F60027A9FE /* Sources */,
-				0D80D3CF1BE1D7F60027A9FE /* Frameworks */,
-				0D80D3D01BE1D7F60027A9FE /* CopyFiles */,
+				0D1EF4C11BE447B600BD9584 /* Sources */,
+				0D1EF4C21BE447B600BD9584 /* Frameworks */,
+				0D1EF4C31BE447B600BD9584 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = algo_proj_take2;
-			productName = algo_proj_take2;
-			productReference = 0D80D3D21BE1D7F60027A9FE /* algo_proj_take2 */;
+			name = Algo_Sensor_Proj;
+			productName = Algo_Sensor_Proj;
+			productReference = 0D1EF4C51BE447B600BD9584 /* Algo_Sensor_Proj */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0D80D3CA1BE1D7F60027A9FE /* Project object */ = {
+		0D1EF4BD1BE447B600BD9584 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Trevor Ross";
 				TargetAttributes = {
-					0D80D3D11BE1D7F60027A9FE = {
+					0D1EF4C41BE447B600BD9584 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
-			buildConfigurationList = 0D80D3CD1BE1D7F60027A9FE /* Build configuration list for PBXProject "algo_proj_take2" */;
+			buildConfigurationList = 0D1EF4C01BE447B600BD9584 /* Build configuration list for PBXProject "Algo_Sensor_Proj" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0D80D3C91BE1D7F60027A9FE;
-			productRefGroup = 0D80D3D31BE1D7F60027A9FE /* Products */;
+			mainGroup = 0D1EF4BC1BE447B600BD9584;
+			productRefGroup = 0D1EF4C61BE447B600BD9584 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D80D3D11BE1D7F60027A9FE /* algo_proj_take2 */,
+				0D1EF4C41BE447B600BD9584 /* Algo_Sensor_Proj */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D80D3CE1BE1D7F60027A9FE /* Sources */ = {
+		0D1EF4C11BE447B600BD9584 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D80D3E41BE1D8290027A9FE /* mission.cpp in Sources */,
-				0D80D3EC1BE1DBAF0027A9FE /* AOI.cpp in Sources */,
-				0D80D3E51BE1D8290027A9FE /* sensor.cpp in Sources */,
-				0D80D3D61BE1D7F60027A9FE /* main.cpp in Sources */,
+				0D1EF4C91BE447B600BD9584 /* main.cpp in Sources */,
+				0D1EF4D61BE447D900BD9584 /* AOI.cpp in Sources */,
+				0D1EF4D81BE447D900BD9584 /* mission.cpp in Sources */,
+				0D1EF4D91BE447D900BD9584 /* sensor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0D80D3D71BE1D7F60027A9FE /* Debug */ = {
+		0D1EF4CA1BE447B600BD9584 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +186,7 @@
 			};
 			name = Debug;
 		};
-		0D80D3D81BE1D7F60027A9FE /* Release */ = {
+		0D1EF4CB1BE447B600BD9584 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,14 +222,14 @@
 			};
 			name = Release;
 		};
-		0D80D3DA1BE1D7F60027A9FE /* Debug */ = {
+		0D1EF4CD1BE447B600BD9584 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0D80D3DB1BE1D7F60027A9FE /* Release */ = {
+		0D1EF4CE1BE447B600BD9584 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -239,24 +239,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D80D3CD1BE1D7F60027A9FE /* Build configuration list for PBXProject "algo_proj_take2" */ = {
+		0D1EF4C01BE447B600BD9584 /* Build configuration list for PBXProject "Algo_Sensor_Proj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D80D3D71BE1D7F60027A9FE /* Debug */,
-				0D80D3D81BE1D7F60027A9FE /* Release */,
+				0D1EF4CA1BE447B600BD9584 /* Debug */,
+				0D1EF4CB1BE447B600BD9584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D80D3D91BE1D7F60027A9FE /* Build configuration list for PBXNativeTarget "algo_proj_take2" */ = {
+		0D1EF4CC1BE447B600BD9584 /* Build configuration list for PBXNativeTarget "Algo_Sensor_Proj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D80D3DA1BE1D7F60027A9FE /* Debug */,
-				0D80D3DB1BE1D7F60027A9FE /* Release */,
+				0D1EF4CD1BE447B600BD9584 /* Debug */,
+				0D1EF4CE1BE447B600BD9584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0D80D3CA1BE1D7F60027A9FE /* Project object */;
+	rootObject = 0D1EF4BD1BE447B600BD9584 /* Project object */;
 }

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0D80D3D11BE1D7F60027A9FE"
-               BuildableName = "algo_proj_take2"
-               BlueprintName = "algo_proj_take2"
-               ReferencedContainer = "container:algo_proj_take2.xcodeproj">
+               BlueprintIdentifier = "0D1EF4C41BE447B600BD9584"
+               BuildableName = "Algo_Sensor_Proj"
+               BlueprintName = "Algo_Sensor_Proj"
+               ReferencedContainer = "container:Algo_Sensor_Proj.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0D80D3D11BE1D7F60027A9FE"
-            BuildableName = "algo_proj_take2"
-            BlueprintName = "algo_proj_take2"
-            ReferencedContainer = "container:algo_proj_take2.xcodeproj">
+            BlueprintIdentifier = "0D1EF4C41BE447B600BD9584"
+            BuildableName = "Algo_Sensor_Proj"
+            BlueprintName = "Algo_Sensor_Proj"
+            ReferencedContainer = "container:Algo_Sensor_Proj.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0D80D3D11BE1D7F60027A9FE"
-            BuildableName = "algo_proj_take2"
-            BlueprintName = "algo_proj_take2"
-            ReferencedContainer = "container:algo_proj_take2.xcodeproj">
+            BlueprintIdentifier = "0D1EF4C41BE447B600BD9584"
+            BuildableName = "Algo_Sensor_Proj"
+            BlueprintName = "Algo_Sensor_Proj"
+            ReferencedContainer = "container:Algo_Sensor_Proj.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0D80D3D11BE1D7F60027A9FE"
-            BuildableName = "algo_proj_take2"
-            BlueprintName = "algo_proj_take2"
-            ReferencedContainer = "container:algo_proj_take2.xcodeproj">
+            BlueprintIdentifier = "0D1EF4C41BE447B600BD9584"
+            BuildableName = "Algo_Sensor_Proj"
+            BlueprintName = "Algo_Sensor_Proj"
+            ReferencedContainer = "container:Algo_Sensor_Proj.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

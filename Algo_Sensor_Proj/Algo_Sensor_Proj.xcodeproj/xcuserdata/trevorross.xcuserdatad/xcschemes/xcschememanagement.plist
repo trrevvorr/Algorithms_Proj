@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>algo_proj_take2.xcscheme</key>
+		<key>Algo_Sensor_Proj.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D80D3D11BE1D7F60027A9FE</key>
+		<key>0D1EF4C41BE447B600BD9584</key>
 		<dict>
 			<key>primary</key>
 			<true/>
