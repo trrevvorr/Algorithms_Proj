@@ -209,7 +209,7 @@ void AOI::online_greedy()
 		
 		// if enough valid sensors were found
 		if (valid_sensors.size() >= m_iter->N_req_sensors) {
-			(*m_iter).mission_succeed = true;
+			m_iter->mission_succeed = true;
 			
 			// sort sensors by energy level (highest to lowest)
 			valid_sensors.sort();
