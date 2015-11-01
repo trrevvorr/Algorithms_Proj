@@ -32,6 +32,7 @@ public:
 	Mission(int aoi_size=0, int duration=0, int num_req_sensors=0);
 	
 	void print_details(int m_ID=NULL);
+	// overloaded for use with .sort() function
 	friend bool operator < (const Mission &l, const Mission &r);
 };
 

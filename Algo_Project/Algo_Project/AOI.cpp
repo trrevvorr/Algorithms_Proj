@@ -53,6 +53,8 @@ void AOI::print_details(int num_details)
     print_sensor_energy_stats();
 }
 
+// Used for printint details of expiraments in a format for use with csv document
+// prints a single line of data
 void AOI::print_details_csv_friendly()
 {
 	list<Mission>::iterator m_iter = m_list.begin();
@@ -104,7 +106,7 @@ Mission AOI::index_missions(int index)
 	return *list_iter;
 }
 
-// Prints the number of missions that have succeeded (mission_succeed == true)
+// Prints the percentage of missions that have succeeded (mission_succeed == true)
 void AOI::print_mission_success_count()
 {
 	int succeed_count = 0;
@@ -120,7 +122,7 @@ void AOI::print_mission_success_count()
 	return;
 }
 
-// Prints the number of sensors with less than 10 energy units remaining
+// Prints the percentage of sensors with less than 10 energy units remaining
 void AOI::print_sensors_under_10()
 {
 	int count_under_10 = 0;
@@ -186,6 +188,8 @@ list<Sensor> AOI::find_valid_sensors(Mission m)
 	return valid_sensors;
 }
 
+// returns true if sensor s is within the radius of mission m
+// returns false otherwise
 bool AOI::in_range(Mission m, Sensor s)
 {
 	float m_x = m.pos_x;
@@ -197,7 +201,6 @@ bool AOI::in_range(Mission m, Sensor s)
 	if (dist <= m.radius) {return true;}
 	return false;
 }
-
 
 // Prints out the Sensors in the list it is passed (s)
 void AOI::print_sensors(list<Sensor> s)
@@ -339,6 +342,9 @@ void AOI::offline_greedy()
 	return;
 }
 
+// updates the sensor who's unique s_id it was passed
+// The sensor will become available one time unit after m_end_time
+// the value of m_duration will be deducted from the sensor's energy
 void AOI::update_sensor(int s_id, int m_duration, int m_end_time)
 {
 	list<Sensor>::iterator s_iter = s_list.begin();
@@ -355,6 +361,7 @@ void AOI::update_sensor(int s_id, int m_duration, int m_end_time)
 	return;
 }
 
+// returns the sensor who's sensor_id matches s_id
 Sensor AOI::lookup_by_sensor_id(int s_id)
 {
 	list<Sensor>::iterator s_iter = s_list.begin();
@@ -369,6 +376,8 @@ Sensor AOI::lookup_by_sensor_id(int s_id)
 	return *s_list.end();
 }
 
+// randomly selects N_req_sensors from a list of valid sensors
+// mission fails if there are too few valid sensors
 void AOI::random_algo()
 {
     list<Sensor> valid_sensors, picked_sensors,to_print;

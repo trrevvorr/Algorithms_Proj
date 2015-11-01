@@ -15,6 +15,7 @@ Mission::Mission(int aoi_size, int duration, int num_req_sensors)
 	mission_succeed = false;
 };
 
+// prints all important information about mission
 void Mission::print_details(int m_ID)
 {
 	cout << "\n== MISSION " << m_ID << " ==\n";
@@ -25,6 +26,9 @@ void Mission::print_details(int m_ID)
 	return;
 }
 
+// returns true if the lhs mission has an earlier start time than the rhs mission
+// false otherwise
+// allows missions to be sorted by increasing start time
 bool operator < (const Mission &lhs, const Mission &rhs)
 {
 	if (lhs.start < rhs.start) {

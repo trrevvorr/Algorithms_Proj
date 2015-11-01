@@ -14,6 +14,7 @@ Sensor::Sensor(int s_id, int aoi_size)
 	conflictions = 0;
 }
 
+// prints all important information about this sensor in an easy-to-read format
 void Sensor::print_details(int s_ID)
 {
 	cout << "== SENSOR " << s_ID << " ==\n";
@@ -23,6 +24,10 @@ void Sensor::print_details(int s_ID)
 	return;
 }
 
+// returns true if lhs sensor has fewer conflictions than the rhs sensor
+// returns true if lhs.conflictions == rhs.conflictions but
+// lhs sensor has more energy than the rhs.sensor
+// returns false otherwise 
 bool operator < (const Sensor &lhs, const Sensor &rhs)
 {
 	// sensor with least conflictions 

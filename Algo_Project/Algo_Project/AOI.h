@@ -5,8 +5,6 @@
 #include <iostream>
 #include <list>
 #include <cmath>
-//pow(b,p); b = base, p = power
-//sqrt(n);
 #include "Mission.h"
 #include "Sensor.h"
 using namespace std;
@@ -16,9 +14,7 @@ using namespace std;
 
 const int AOI_SIZE = 50; // should be 50
 
-
 //////////////////////////////////////
-
 
 class AOI
 {
@@ -38,12 +34,12 @@ public:
 	// list accesors/modifiers
 	Sensor index_sensors(int index, list<Sensor> s);
 	Mission index_missions(int index);
-	void print_sensors(list<Sensor> s);
 	void update_sensor(int s_id, int duration, int available_at);
 	Sensor lookup_by_sensor_id(int s_id);
 
 	// print details
 	void print_details(int num_details=0);
+	void print_sensors(list<Sensor> s);
 	void print_mission_success_count();
 	void print_sensors_under_10();
 	void print_sensor_energy_stats();
@@ -57,28 +53,6 @@ public:
 	void online_greedy();
 	void offline_greedy();
     void random_algo();
-
-//	void sorted_valid_sensor_least_conflication(Mission a_mission);
-//	bool valid(Mission a_mission, Sensor a_sensor);
-//
-//    void update_sensor_information(Mission a_mission);
-//    void random_pick(Mission a_mission);
-//
-//    void find_confliction();
-
-
-  
-
-// put valid_sensor array at mission class
-
-//  Sensor *valid_sensor=NULL;
-	
-//could we giev each sensor a ID????
-
-
-
-
-
 };
 
 #endif
