@@ -11,6 +11,7 @@
 		0D1EF4F31BE44B6E00BD9584 /* AOI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4ED1BE44B6E00BD9584 /* AOI.cpp */; };
 		0D1EF4F41BE44B6E00BD9584 /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4EF1BE44B6E00BD9584 /* mission.cpp */; };
 		0D1EF4F51BE44B6E00BD9584 /* sensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4F11BE44B6E00BD9584 /* sensor.cpp */; };
+		0D1EF4F71BE5952C00BD9584 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EF4F61BE5952C00BD9584 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 		0D1EF4F01BE44B6E00BD9584 /* mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mission.h; sourceTree = "<group>"; };
 		0D1EF4F11BE44B6E00BD9584 /* sensor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sensor.cpp; sourceTree = "<group>"; };
 		0D1EF4F21BE44B6E00BD9584 /* sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensor.h; sourceTree = "<group>"; };
+		0D1EF4F61BE5952C00BD9584 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		0D1EF4E51BE44B3900BD9584 /* Algo_Project */ = {
 			isa = PBXGroup;
 			children = (
+				0D1EF4F61BE5952C00BD9584 /* README.md */,
 				0D1EF4ED1BE44B6E00BD9584 /* AOI.cpp */,
 				0D1EF4EE1BE44B6E00BD9584 /* AOI.h */,
 				0D1EF4EF1BE44B6E00BD9584 /* mission.cpp */,
@@ -135,6 +138,7 @@
 			files = (
 				0D1EF4F41BE44B6E00BD9584 /* mission.cpp in Sources */,
 				0D1EF4F51BE44B6E00BD9584 /* sensor.cpp in Sources */,
+				0D1EF4F71BE5952C00BD9584 /* README.md in Sources */,
 				0D1EF4E71BE44B3900BD9584 /* main.cpp in Sources */,
 				0D1EF4F31BE44B6E00BD9584 /* AOI.cpp in Sources */,
 			);

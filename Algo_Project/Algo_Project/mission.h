@@ -10,9 +10,9 @@
 // ===================================
 // constants
 
-const int m_radius = 5; // should be 5
+const int M_RADIUS = 5; // should be 5
 // mission start time is a random number from 1 to start_range
-const int start_range = 500; // unspecified default value
+const int START_RANGE = 1000; // unspecified default value
 //====================================
 
 class Mission

@@ -8,9 +8,9 @@ Mission::Mission(int aoi_size, int duration, int num_req_sensors)
 	// mutiplying that by the aoi size returns float between 0.000... and aoi_size
 	pos_x = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) * aoi_size;
 	pos_y = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) * aoi_size;
-	start = (rand() % start_range) + 1;
+	start = (rand() % START_RANGE) + 1;
 	end = start + duration - 1;
-	radius = m_radius;
+	radius = M_RADIUS;
 	N_req_sensors = num_req_sensors;
 	mission_succeed = false;
 };

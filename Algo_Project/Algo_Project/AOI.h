@@ -11,6 +11,14 @@
 #include "Sensor.h"
 using namespace std;
 
+///////////////////////////////////////
+// constants
+
+const int AOI_SIZE = 50; // should be 50
+
+
+//////////////////////////////////////
+
 
 class AOI
 {
@@ -39,6 +47,7 @@ public:
 	void print_mission_success_count();
 	void print_sensors_under_10();
 	void print_sensor_energy_stats();
+	void print_details_csv_friendly();
 	
 	// Other functions
 	list<Sensor> find_valid_sensors(Mission m);

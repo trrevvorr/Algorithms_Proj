@@ -4,7 +4,7 @@
 AOI::AOI(int num_sensor_input, int num_mission_input, int mission_duration, int mission_req_sensors)
 {
 	// initialize AOI specific variables
-	aoi_size = 50;
+	aoi_size = AOI_SIZE;
 	num_sensor = num_sensor_input;
 	num_mission = num_mission_input;
 	
@@ -53,6 +53,31 @@ void AOI::print_details(int num_details)
     print_sensor_energy_stats();
 }
 
+void AOI::print_details_csv_friendly()
+{
+	list<Mission>::iterator m_iter = m_list.begin();
+	list<Sensor>::iterator s_iter = s_list.begin();
+	float succeed_count = 0;
+	float less_than_10 = 0;
+	
+	for (int i = 0; i < num_mission; i++) {
+		if (m_iter->mission_succeed) {
+			succeed_count++;
+		}
+		m_iter++;
+	}
+	
+	for (int i = 0; i < num_sensor; i++) {
+		if (s_iter->energy < 10) {
+			less_than_10++;
+		}
+		s_iter++;
+	}
+	cout << succeed_count/num_mission*100 << "%," << less_than_10/num_sensor*100 << "%,";
+	
+	return;
+}
+
 // Returns the sensor at the index of the s list. For example:
 // index_sensors(0, s_list) will retun the frist sensor in the s_list
 // WARNING, updating the sensor returned will not update it in the actual list
@@ -90,7 +115,8 @@ void AOI::print_mission_success_count()
 		}
 	}
 	
-	cout << "Number of Missions that succeeded: " << succeed_count << endl;
+	cout << "Percentage of Missions that succeeded: "
+	<< static_cast <float> (succeed_count)/num_mission*100 << "%\n";
 	return;
 }
 
@@ -105,7 +131,8 @@ void AOI::print_sensors_under_10()
 		}
 	}
 	
-	cout << "Number of Sensors having <10 energy left: " << count_under_10 << endl;
+	cout << "Percentage of Sensors having <10 energy: "
+	<< static_cast <float> (count_under_10)/num_sensor*100 << "%\n";
 	return;
 }
 
